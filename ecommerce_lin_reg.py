@@ -16,7 +16,7 @@ import numpy as np
 # import data visualization libraries 
 import matplotlib.pyplot as plt
 import seaborn as sns
-# import scikit-learn library to use machiune learning models
+# import scikit-learn library to use machine learning models
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn import metrics
@@ -50,11 +50,11 @@ X = ecom[['Avg. Session Length', 'Time on App','Time on Website', 'Length of Mem
 # y denotes the history of data which would used to do the prediction 
 y = ecom['Yearly Amount Spent']
 
-# create train and test variabled for X and y where test siz ehere will be 30% and the remaining 70% will be used to train our model
+# create train and test variabled for X and y where test size will be 30% and the remaining 70% will be used to train our model
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 101)
 
 # create an object/instance for Linear Regression model
-# y = mx+b
+# y = mx+b {slope or straight line linear function}
 lm = LinearRegression()
 
 # train/fit the data using the Linear Regression object 
