@@ -1,7 +1,8 @@
 numpy
 pandas
-seaborn
 matplotlib
+seaborn
+jupyterlab
 scikit-learn
 plotly
 cufflinks
